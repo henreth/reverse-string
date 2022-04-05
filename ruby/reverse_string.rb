@@ -1,5 +1,8 @@
 def reverse_string(str)
-  # type your code in here
+  newStr = ""
+  chars = str.each_char.to_a
+  chars.size.times{newStr << chars.pop}
+  newStr
 end
 
 if __FILE__ == $PROGRAM_NAME
